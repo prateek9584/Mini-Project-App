@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="name">
+        <item>  </item>
+        <item>Owner</item>
+        <item>Tenant</item>
+    </string-array>
+
+</resources>
