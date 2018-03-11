@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/profile_background"
+    android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:src="@drawable/profile_image"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:text="Prateek Chanderiya"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:id="@+id/username"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="2016ca62@gmail.com"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:id="@+id/email"
+        />
+
+</LinearLayout>

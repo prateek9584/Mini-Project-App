@@ -1,9 +1,6 @@
 package com.example.prateek.Miniproject;
 
 import android.content.Intent;
-import android.app.Activity;
-import android.database.Cursor;
-import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.os.Bundle;
@@ -12,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -21,6 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class Frag1 extends Fragment {
+    EditText editText1;
+    EditText editText2;
+    Button button1;
     TextView txt;
     Spinner sp;
     EditText un;
@@ -39,6 +40,9 @@ public class Frag1 extends Fragment {
         // Inflate the layout for this fragment
         View v=  inflater.inflate(R.layout.fragment_frag1, container, false);
         txt = (TextView)v.findViewById(R.id.forget);
+        editText1 =(EditText)v.findViewById(R.id.username);
+        editText2= (EditText)v.findViewById(R.id.password);
+        button1 = v.findViewById(R.id.loginButton);
         sp = (Spinner)v.findViewById(R.id.sp);
         un= (EditText)v.findViewById(R.id.username);
        // String myString = "Country";
@@ -48,6 +52,7 @@ public class Frag1 extends Fragment {
 
         sp.setAdapter(ad);
         sp.setOnItemSelectedListener(new OnItemSelectedListener() {
+
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
@@ -75,6 +80,24 @@ public class Frag1 extends Fragment {
                 Intent intent =new Intent(getContext(),Otp.class);
                 startActivity(intent);
 
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                login(editText1.getText().toString(),editText2.getText().toString());
+            }
+
+            private void login(String abc, String Pass) {
+                if (abc.equals("admin")&&Pass.equals("12345"))
+                {
+                    Intent intent = new Intent(getActivity(),ownerActivity.class);
+                    startActivity(intent);
+                }
+                else
+                {
+                    Toast.makeText(getActivity(),"Not a valid user",Toast.LENGTH_SHORT).show();
+                }
             }
         });
         // code here

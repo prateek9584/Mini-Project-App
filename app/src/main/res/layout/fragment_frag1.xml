@@ -74,7 +74,7 @@
     </LinearLayout>
         <EditText
             style="@style/editText_style"
-            android:id="@+id/text_input_password"
+            android:id="@+id/password"
             android:drawableLeft="@drawable/password_ic"
             android:drawableRight="@drawable/show_password_ic"
             android:layout_weight="1"
