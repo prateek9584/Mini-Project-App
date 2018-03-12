@@ -2,18 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.prateek.GalleryFragment">
+    tools:context="com.example.prateek.ModifyProperties">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GALLERY"
+        android:text="MODIFYADD"
         android:padding="8dp"
         android:layout_marginLeft="150dp"
         android:layout_gravity="center"
         android:textColor="#fff"
         android:background="@color/colorPrimary"
         android:textSize="24sp"
-        android:id="@+id/textview" />
+        android:id="@+id/modifyadd" />
 
 </LinearLayout>

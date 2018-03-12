@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,11 +22,9 @@
         <activity
             android:name=".ownerActivity"
             android:label="@string/title_activity_owner"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name="com.example.prateek.fragment.Prem"
-            android:label="@string/title_activity_prem"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+        </activity>
+
     </application>
 
 </manifest>

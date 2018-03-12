@@ -6,16 +6,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.prateek.Miniproject.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class GalleryFragment extends Fragment {
+public class Viewproperties extends Fragment {
 
 
-    public GalleryFragment() {
+    public Viewproperties() {
         // Required empty public constructor
     }
 
@@ -24,7 +23,7 @@ public class GalleryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gallery, container, false);
+        return inflater.inflate(R.layout.fragment_viewproperties, container, false);
     }
 
 }
