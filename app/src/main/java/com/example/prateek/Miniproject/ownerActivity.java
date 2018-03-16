@@ -1,6 +1,7 @@
 package com.example.prateek.Miniproject;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -102,52 +103,54 @@ public class ownerActivity extends AppCompatActivity
 
         if (id == R.id.postadd) {
             // set fragment initially
-            MainFragment fragment = new MainFragment();
+           /** MainFragment fragment = new MainFragment();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
-            fragmentTransaction.commit();
+            fragmentTransaction.commit();*/
 
             // Handle the camera action
         } else if (id == R.id.modifyadd) {
             // set fragment initially
-           Postadd fragment = new Postadd();
+           /*Postadd fragment = new Postadd();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
-            fragmentTransaction.commit();
+            fragmentTransaction.commit();*/
 
 
         } else if (id == R.id.viewproperties) {
             // set fragment initially
-            Viewproperties fragment = new Viewproperties();
+            /*Viewproperties fragment = new Viewproperties();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();
-
+*/
 
         } else if (id == R.id.editprofile) {
             // set fragment initially
-            Editprofile fragment = new Editprofile();
+  /*          Editprofile fragment = new Editprofile();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();
-
-
+*/
+        finish();
+        Intent intent=new Intent( this,EditProfile.class);
+        startActivity(new Intent(intent));
         } else if (id == R.id.changepassword) {
             // set fragment initially
-            Changepassword fragment = new Changepassword();
+  /*/          Changepassword fragment = new Changepassword();
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();
-
+*/
 
         } else if (id == R.id.logout) {
             // set fragment initially
-            Logout fragment = new Logout();
+  /*          Logout fragment = new Logout();
 
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();
-        }
+    */    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

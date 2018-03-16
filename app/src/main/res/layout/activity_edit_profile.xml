@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prateek.Editprofile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="250dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/profile_image"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp" />
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/email_ic"
+        android:ems="10"
+        android:hint="Enter your E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp" />
+
+    <EditText
+        android:id="@+id/number"
+        style="@style/editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/phone_ic"
+        android:ems="10"
+        android:hint="Enter your number"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/address"
+        android:ems="10"
+        android:hint="Enter your Address"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        style="@style/editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/adharnumber"
+        android:ems="10"
+        android:hint="Enter Your Adhar Number"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</LinearLayout>
