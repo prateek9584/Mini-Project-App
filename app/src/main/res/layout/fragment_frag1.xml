@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bemyguest"
+    android:background="@drawable/pgimage"
     tools:context="com.example.prateek.Miniproject.Frag1"
     android:orientation="vertical">
     <ScrollView
@@ -62,6 +62,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             style="@style/editText_style"
+            android:background="@drawable/textedit_background"
             android:layout_weight="1"
             android:cursorVisible="true"
             android:drawableLeft="@drawable/user_ic"
@@ -74,6 +75,7 @@
     </LinearLayout>
         <EditText
             style="@style/editText_style"
+            android:background="@drawable/textedit_background"
             android:id="@+id/password"
             android:drawableLeft="@drawable/password_ic"
             android:drawableRight="@drawable/show_password_ic"

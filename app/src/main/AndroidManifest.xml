@@ -24,7 +24,11 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".EditProfile" />
         <activity android:name=".ModifyAd" />
-        <activity android:name=".OwnerHome"></activity>
+        <activity android:name=".OwnerHome" />
+        <activity android:name=".postadd" />
+        <activity android:name=".viewProperties" />
+        <activity android:name=".changePassword" />
+        <activity android:name=".logOut"></activity>
     </application>
 
 </manifest>

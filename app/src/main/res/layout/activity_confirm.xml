@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pgimage"
     android:orientation="vertical"
     tools:context="com.example.prateek.Miniproject.Confirm">
     <ScrollView
@@ -23,6 +24,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/textedit_background"
         android:id="@+id/password"
         android:layout_weight="1"
         android:paddingLeft="10dp"
@@ -37,6 +39,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/textedit_background"
         android:id="@+id/confirmpassword"
         android:drawableRight="@drawable/show_password_ic"
         android:paddingLeft="60dp"

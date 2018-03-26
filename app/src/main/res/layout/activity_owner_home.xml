@@ -4,70 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.prateek.MainFragment">
+    tools:context="com.example.prateek.Miniproject.ownerActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:id="@+id/imageview"
+        android:src="@drawable/myimage"
+        android:layout_height="350dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_marginTop="200dp"
-        android:textColor="#00E5FF"
-        android:drawableLeft="@drawable/user_ic"
-        android:textSize="30dp"
-        android:paddingLeft="1dp"
+        android:id="@+id/username"
+        android:textColor="#00E676"
         android:layout_width="match_parent"
-        android:background="#66BB6A"
-        android:layout_height="50dp"
-        android:text="PRATEEK" />
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="PRATEEK CHANDERIYA" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/emailid"
         android:layout_width="match_parent"
-        android:background="#66BB6A"
-        android:layout_marginTop="3dp"
-        android:textSize="30dp"
-        android:paddingLeft="1dp"
-        android:drawableLeft="@drawable/girluser"
-        android:textColor="#F50057"
-        android:layout_height="50dp"
-        android:text="PREETI" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:background="#66BB6A"
-        android:drawableLeft="@drawable/user_ic"
-        android:textSize="30dp"
-        android:layout_marginTop="3dp"
-        android:layout_width="match_parent"
-        android:textColor="#C6FF00"
-        android:layout_height="50dp"
-        android:paddingLeft="1dp"
-        android:text="PREM" />
-
-    <TextView
-        android:layout_marginTop="3dp"
-        android:id="@+id/textView4"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:textColor="#E91E63"
-        android:paddingLeft="1dp"
-        android:drawableLeft="@drawable/girluser"
-        android:background="#66BB6A"
-        android:layout_height="50dp"
-        android:text="PRIYA" />
-
-    <TextView
-        android:layout_marginTop="3dp"
-        android:id="@+id/textView5"
-        android:textSize="30dp"
-        android:background="#66BB6A"
-        android:paddingLeft="1dp"
-        android:drawableLeft="@drawable/user_ic"
-        android:layout_width="match_parent"
-        android:textColor="#E65100"
-        android:layout_height="50dp"
-        android:text="RAKESH" />
+        android:textColor="#00E676"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="2016ca62@gmail.com" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
-
-
-

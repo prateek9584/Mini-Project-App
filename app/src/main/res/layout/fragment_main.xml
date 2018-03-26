@@ -4,25 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.prateek.MainFragment">
+    tools:context="com.example.prateek.Miniproject.ownerActivity">
 
 
    <TextView
        android:id="@+id/textView"
        android:layout_marginTop="200dp"
        android:textColor="#00E5FF"
+
        android:drawableLeft="@drawable/user_ic"
        android:textSize="30dp"
        android:paddingLeft="1dp"
        android:layout_width="match_parent"
-       android:background="#66BB6A"
+       android:background="@drawable/textedit_background"
        android:layout_height="50dp"
        android:text="PRATEEK" />
 
    <TextView
        android:id="@+id/textView2"
        android:layout_width="match_parent"
-       android:background="#66BB6A"
+       android:background="@drawable/textedit_background"
        android:layout_marginTop="3dp"
        android:textSize="30dp"
        android:paddingLeft="1dp"
@@ -33,7 +34,7 @@
 
    <TextView
        android:id="@+id/textView3"
-       android:background="#66BB6A"
+       android:background="@drawable/textedit_background"
        android:drawableLeft="@drawable/user_ic"
        android:textSize="30dp"
        android:layout_marginTop="3dp"
@@ -51,7 +52,7 @@
        android:textColor="#E91E63"
        android:paddingLeft="1dp"
        android:drawableLeft="@drawable/girluser"
-       android:background="#66BB6A"
+       android:background="@drawable/textedit_background"
        android:layout_height="50dp"
        android:text="PRIYA" />
 
@@ -59,7 +60,7 @@
        android:layout_marginTop="3dp"
        android:id="@+id/textView5"
        android:textSize="30dp"
-       android:background="#66BB6A"
+       android:background="@drawable/textedit_background"
        android:paddingLeft="1dp"
        android:drawableLeft="@drawable/user_ic"
        android:layout_width="match_parent"

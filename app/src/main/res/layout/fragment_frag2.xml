@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bemyguest2"
+    android:background="@drawable/pgimage"
     android:layout_height="match_parent"
 
     android:orientation="vertical"
@@ -47,6 +47,7 @@
                 <EditText
                     android:id="@+id/user"
                     style="@style/editText_style"
+                    android:background="@drawable/textedit_background"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -62,6 +63,7 @@
             <EditText
                 android:id="@+id/email"
                 style="@style/editText_style"
+                android:background="@drawable/textedit_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -75,6 +77,7 @@
             <EditText
                 android:id="@+id/number"
                 style="@style/editText_style"
+                android:background="@drawable/textedit_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -88,6 +91,7 @@
             <EditText
                 android:id="@+id/password"
                 style="@style/editText_style"
+                android:background="@drawable/textedit_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -100,6 +104,7 @@
 
             <EditText
                 android:id="@+id/confirmpassword"
+                android:background="@drawable/textedit_background"
                 style="@style/editText_style"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -119,7 +124,7 @@
 
                 <Button
                     android:id="@+id/register"
-                    style="@style/buton_background"
+                    android:background="@drawable/button_background"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="90dp"

@@ -2,13 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pgimage"
     android:orientation="vertical"
-    tools:context="com.example.prateek.Editprofile">
+    tools:context="com.example.prateek.Miniproject.ownerActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="250dp"
         android:id="@+id/imageView2"
-        android:src="@drawable/profile_image"
+        android:src="@drawable/myimage"
         android:layout_height="250dp"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="60dp" />
@@ -16,6 +25,7 @@
     <EditText
         android:id="@+id/email"
         style="@style/editText_style"
+        android:background="@drawable/textedit_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -29,6 +39,7 @@
     <EditText
         android:id="@+id/number"
         style="@style/editText_style"
+        android:background="@drawable/textedit_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -42,6 +53,7 @@
     <EditText
         android:id="@+id/password"
         style="@style/editText_style"
+        android:background="@drawable/textedit_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -57,6 +69,7 @@
         style="@style/editText_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/textedit_background"
         android:layout_weight="1"
         android:drawableLeft="@drawable/adharnumber"
         android:ems="10"
@@ -64,5 +77,7 @@
         android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:paddingRight="10dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

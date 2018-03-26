@@ -22,6 +22,7 @@
     <EditText
         android:id="@+id/username"
         style="@style/editText_style"
+        android:background="@drawable/textedit_background"
         android:drawableLeft="@drawable/user_ic"
         android:layout_width="match_parent"
         android:paddingLeft="10dp"
@@ -35,6 +36,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/textedit_background"
         style="@style/editText_style"
         android:layout_weight="1"
         android:id="@+id/number"
@@ -80,6 +82,7 @@
         style="@style/editText_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/textedit_background"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="number" />

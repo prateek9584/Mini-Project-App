@@ -3,10 +3,7 @@ package com.example.prateek.Miniproject;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,14 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.example.prateek.Changepassword;
-import com.example.prateek.Editprofile;
-import com.example.prateek.Logout;
-import com.example.prateek.ModifyProperties;
-import com.example.prateek.MainFragment;
-import com.example.prateek.Postadd;
-import com.example.prateek.Viewproperties;
 
 public class ownerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -35,10 +24,10 @@ public class ownerActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_owner);
         // set fragment initially
-        MainFragment fragment = new MainFragment();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container,fragment);
-        fragmentTransaction.commit();
+    //    MainFragment fragment = new MainFragment();
+      //  FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        //fragmentTransaction.replace(R.id.fragment_container,fragment);
+        //fragmentTransaction.commit();
           toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -107,6 +96,9 @@ public class ownerActivity extends AppCompatActivity
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
             fragmentTransaction.commit();*/
+            finish();
+            Intent intent=new Intent( this,postadd.class);
+            startActivity(new Intent(intent));
 
             // Handle the camera action
         } else if (id == R.id.modifyadd) {
@@ -115,6 +107,9 @@ public class ownerActivity extends AppCompatActivity
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();*/
+            finish();
+            Intent intent=new Intent( this,ModifyAd.class);
+            startActivity(new Intent(intent));
 
 
         } else if (id == R.id.viewproperties) {
@@ -123,7 +118,10 @@ public class ownerActivity extends AppCompatActivity
             android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,fragment);
             fragmentTransaction.commit();
-*/
+            */
+            finish();
+            Intent intent=new Intent( this,EditProfile.class);
+            startActivity(new Intent(intent));
 
         } else if (id == R.id.editprofile) {
             // set fragment initially
@@ -136,21 +134,14 @@ public class ownerActivity extends AppCompatActivity
         Intent intent=new Intent( this,EditProfile.class);
         startActivity(new Intent(intent));
         } else if (id == R.id.changepassword) {
-            // set fragment initially
-  /*/          Changepassword fragment = new Changepassword();
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container,fragment);
-            fragmentTransaction.commit();
-*/
+            finish();
+            Intent intent=new Intent( this,changePassword.class);
+            startActivity(new Intent(intent));
 
-        } else if (id == R.id.logout) {
-            // set fragment initially
-  /*          Logout fragment = new Logout();
-
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container,fragment);
-            fragmentTransaction.commit();
-    */    }
+        } else if (id == R.id.logout){
+        finish();
+        Intent intent=new Intent( this,logOut.class);
+        startActivity(new Intent(intent));}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
